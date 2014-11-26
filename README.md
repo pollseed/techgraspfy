@@ -1,6 +1,6 @@
 # Summary
 
-Technology Grasp tool by Spring Boot
+Technology Grasp tool by Scala
 
 ## Required
 * Sbt 0.13.5
