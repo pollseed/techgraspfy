@@ -3,7 +3,8 @@
 Technology Grasp tool by Spring Boot
 
 ## Required
-* Scala 2.11.1
+* Sbt 0.13.5
+* Scala 2.11
 * Playframework 2.3.6
 * eclipse
  
@@ -18,7 +19,7 @@ $ run
 ## Structure
 
 ### Serverside
-* [Playframework](https://www.playframework.com/)
+* [Playframework](https://www.playframework.com/) - Scala
 
 ### Frontside
 * Scala Template
