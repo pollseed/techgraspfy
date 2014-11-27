@@ -12,7 +12,7 @@ Technology Grasp tool by Scala
 
 ```
 $ activator
-$ eclipse with-source=true
+$ eclipse with-source=true or eclipse
 $ run
 ```
 
