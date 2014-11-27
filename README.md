@@ -10,7 +10,7 @@ Technology Grasp tool by Scala
  
 ## Started
 
-### Hit Me
+### Hit This CMD
 
 ```
 $ activator
