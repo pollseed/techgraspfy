@@ -10,13 +10,14 @@ Technology Grasp tool by Scala
  
 ## Started
 
+### Hit Me
+
 ```
 $ activator
 $ eclipse with-source=true or eclipse
 $ run
 ```
-
-## In Failure Case
+### In Failure Case
 Please Check Sbt and Scala, Play version. If version you have the Technology is wrong, does not have successfull result.
 
 ## Structure
