@@ -1,4 +1,5 @@
 # Summary
+[![Gitter](https://badges.gitter.im/Join Chat.svg)](https://gitter.im/pollseed/techgraspfy?utm_source=badge&utm_medium=badge&utm_campaign=pr-badge&utm_content=badge)
 
 Technology Grasp tool by Scala
 
