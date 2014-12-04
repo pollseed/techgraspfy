@@ -3,11 +3,29 @@
 # ~~~~
 
 # Home page
-GET     /                           controllers.Application.index
+#GET     /                           controllers.Application.index
 GET     /setCookie                      controllers.Application.setCookie(name: String ?= "hogehoge")
 GET     /delCookie                    controllers.Application.delCookie
 GET     /bob                        controllers.Application.helloBob
 GET     /getCookie                  controllers.Application.getCookie
+
+# Common
+GET     /settings                    controllers.CommonController.settings()
+GET     /profile                     controllers.CommonController.profile()
+GET     /help                        controllers.CommonController.help()
+
+# Top
+GET     /                           controllers.TopController.index()
+
+# Signin
+GET     /signin                     controllers.SigninController.signin()
+
+# Dashboard
+GET     /dashboard                     controllers.DashboardController.index()
+GET     /dashboard/card                controllers.DashboardController.card()
+GET     /dashboard/analytics           controllers.DashboardController.analytics()
+GET     /dashboard/csv                 controllers.DashboardController.csv()
+GET     /dashboard/technology          controllers.DashboardController.technology()
 
 # Map static resources from the /public folder to the /assets URL path
 GET     /assets/*file               controllers.Assets.at(path="/public", file)

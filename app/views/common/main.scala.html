@@ -1,0 +1,38 @@
+@(title: String)(content: Html)
+
+<!DOCTYPE html>
+
+<html lang="en">
+    <head>
+        <title>@title | TcGraspHub</title>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta name="description" content="">
+        <meta name="author" content="">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/bootstrap.min.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/jumbotron.css")">
+
+        @* TODO 個別にする *@
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/signin.css")">
+        <link rel="stylesheet" media="screen" href="@routes.Assets.at("stylesheets/dashboard.css")">
+        @* ここまで *@
+
+        <link rel="shortcut icon" type="image/png" href="@routes.Assets.at("images/favicon.png")">
+        <script src="@routes.Assets.at("javascripts/jquery-1.9.0.min.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/ie-emulation-modes-warning.js")" type="text/javascript"></script>
+        <script src="@routes.Assets.at("javascripts/ie10-viewport-bug-workaround.js")" type="text/javascript"></script>
+
+        @* TODO 個別にする *@
+        <script src="@routes.Assets.at("javascripts/docs.min.js")" type="text/javascript"></script>
+        @* ここまで *@
+
+        <!--[if lt IE 9]>
+            <script src="@routes.Assets.at("javascripts/html5-tools.js")" type="text/javascript"></script>
+            <script src="@routes.Assets.at("javascripts/ie9-tools.js")" type="text/javascript"></script>
+        <![endif]-->
+    </head>
+    <body>
+        @content
+    </body>
+</html>
