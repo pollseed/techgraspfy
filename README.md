@@ -38,3 +38,10 @@ Please Check Sbt and Scala, Play version. If version you have the Technology is 
 ## Development
 
 ### localServer
+
+# Memo
+今後、このリポジトリは更新されません。CRUD処理が出てきたので、公開で作るわけには行かなくなりました。
+
+というわけで、Bitbucketに移行
+
+buildパスしてるので、簡単に使えるように編集はします
