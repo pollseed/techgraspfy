@@ -1,12 +1,17 @@
 @()
-@common.main("CSV") {
 
-@common.navbar()
+@import common._
+
+@main("CSV") {
+
+@{navbar()}
 
 <div class="container-fluid">
   <div class="row">
 
-    @common.sidebar(constants.TechnologySidebarType.CSV)
+    @{sidebar(constants.TechnologySidebarType.CSV)}
+    
+    @{maintenance()}
 
   </div>
 </div>

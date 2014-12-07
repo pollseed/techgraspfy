@@ -1,0 +1,36 @@
+@()
+
+@import constants._
+
+@required = @{<span class="label label-danger">必須</span>}
+@optional = @{<span class="label label-info">任意</span>}
+
+<div class="col-sm-9 col-sm-offset-3 col-md-10 col-md-offset-2 main">
+  <h3>Programing Languages</h3>
+  <div class="bs-example">
+    <br>
+    <form role="form">
+      <p>【Q1】@{required} 自分が経験してきた<code>プログラミング言語</code>を選択してください。</p>
+      <select name="programingLanguages" class="form-control">
+        @for(lang <- ProgramingLanguages.values){
+          <option value=@{lang.code}>@{lang.value}</option>
+        }
+      </select>
+      <br>
+      
+      <p>【Q2】@{required} Q1で選択した言語の<code>経験年数</code>を選択してください。(例えば、2年半経験している場合→2を選択)</p>
+      <select name="programingYear" class="form-control">
+        @for(year <- 0 to 40){
+          <option value=@{year}>@{year}</option>
+        }
+      </select>
+      <br>
+      
+      <p>【Q3】@{optional} Q1で選択した言語の経験してきた<code>フレームワーク</code>を記入してください。(特になければ未記入で構いません。)</p>
+      <textarea name="frameworkName" class="form-control" row="4" cols="100"></textarea>
+      <br>
+      
+      <button type="button" class="btn btn-primary btn-block">登録</button>
+    </form>
+  </div><!-- /.bs-example -->
+</div>

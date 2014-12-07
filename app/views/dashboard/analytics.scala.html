@@ -1,12 +1,17 @@
 @()
-@common.main("Analytics") {
 
-@common.navbar()
+@import common._
+
+@main("Analytics") {
+
+@{navbar()}
 
 <div class="container-fluid">
   <div class="row">
 
-    @common.sidebar(constants.TechnologySidebarType.ANALYTICS)
+    @{sidebar(constants.TechnologySidebarType.ANALYTICS)}
+    
+    @{maintenance()}
 
   </div>
 </div>

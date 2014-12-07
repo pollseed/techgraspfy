@@ -8,14 +8,14 @@
         <span class="icon-bar"></span>
         <span class="icon-bar"></span>
       </button>
-      <a class="navbar-brand" href="@routes.DashboardController.index()">TcGraspHub</a>
+      <a class="navbar-brand" href="@{routes.DashboardController.index()}">TcGraspHub</a>
     </div>
     <div id="navbar" class="navbar-collapse collapse">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="@routes.DashboardController.index()">Dashboard</a></li>
-        <li><a href="@routes.CommonController.settings()">Settings</a></li>
-        <li><a href="@routes.CommonController.profile()">Profile</a></li>
-        <li><a href="@routes.CommonController.help()">Help</a></li>
+        <li><a href="@{routes.DashboardController.index()}">Dashboard</a></li>
+        <li><a href="@{routes.CommonController.settings()}">Settings</a></li>
+        <li><a href="@{routes.CommonController.profile()}">Profile</a></li>
+        <li><a href="@{routes.CommonController.help()}">Help</a></li>
       </ul>
       <form class="navbar-form navbar-right">
         <input type="text" class="form-control" placeholder="Search...">

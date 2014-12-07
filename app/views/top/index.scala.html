@@ -1,5 +1,8 @@
 @(eForm: Form[models.UserModel])
-@common.main("Top") {
+
+@import common._
+
+@main("Top") {
 <nav class="navbar navbar-inverse navbar-fixed-top" role="navigation">
   <div class="container">
     <div class="navbar-header">
@@ -14,10 +17,10 @@
     <div id="navbar" class="navbar-collapse collapse">
       @helper.form(action = routes.SigninController.signin(), 'id -> "form", 'class -> "navbar-form navbar-right") {
         <div class="form-group">
-          <input type="text" name=@eForm("email").name placeholder="Email" class="form-control" value="@eForm("email").value" />
+          <input type="text" name=@{eForm("email").name} placeholder="Email" class="form-control" value="@{eForm("email").value}" />
         </div>
         <div class="form-group">
-          <input type="password" name=@eForm("password").name placeholder="Password" class="form-control" value="@eForm("password").value" />
+          <input type="password" name=@{eForm("password").name} placeholder="Password" class="form-control" value="@{eForm("password").value}" />
         </div>
         <button type="submit" class="btn btn-success">Sign in</button>
       }
