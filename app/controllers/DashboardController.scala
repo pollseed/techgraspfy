@@ -14,19 +14,19 @@ object DashboardController extends Controller {
   }
 
   def card() = Action {
-    Ok("")
+    Ok(views.html.dashboard.card())
   }
 
   def analytics() = Action {
-    Ok("")
+    Ok(views.html.dashboard.analytics())
   }
 
   def csv() = Action {
-    Ok("")
+    Ok(views.html.dashboard.csv())
   }
 
   def technology() = Action {
-    Ok("")
+    Ok(views.html.dashboard.technology())
   }
 
 }

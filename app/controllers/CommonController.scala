@@ -5,15 +5,15 @@ import play.api.mvc._
 object CommonController extends Controller {
 
   def settings = Action {
-    Ok("settings")
+    Ok(views.html.common.option.settings())
   }
 
   def profile = Action {
-    Ok("profile")
+    Ok(views.html.common.option.profile())
   }
 
   def help = Action {
-    Ok("help")
+    Ok(views.html.common.option.help())
   }
 
 }
