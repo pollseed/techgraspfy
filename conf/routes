@@ -18,7 +18,7 @@ GET     /help                        controllers.CommonController.help()
 GET     /                           controllers.TopController.index()
 
 # Signin
-GET     /signin                     controllers.SigninController.signin()
+POST    /signin                     controllers.SigninController.signin()
 
 # Dashboard
 GET     /dashboard                     controllers.DashboardController.index()
