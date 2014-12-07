@@ -4,10 +4,10 @@
 
 # Home page
 #GET     /                           controllers.Application.index
-GET     /setCookie                      controllers.Application.setCookie(name: String ?= "hogehoge")
-GET     /delCookie                    controllers.Application.delCookie
-GET     /bob                        controllers.Application.helloBob
-GET     /getCookie                  controllers.Application.getCookie
+#GET     /setCookie                      controllers.Application.setCookie(name: String ?= "hogehoge")
+#GET     /delCookie                    controllers.Application.delCookie
+#GET     /bob                        controllers.Application.helloBob
+#GET     /getCookie                  controllers.Application.getCookie
 
 # Common
 GET     /settings                    controllers.CommonController.settings()
