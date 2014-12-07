@@ -9,7 +9,8 @@
   <h3>Programing Languages</h3>
   <div class="bs-example">
     <br>
-    <form role="form">
+    
+    @helper.form(action = routes.TechnologyController.savePrograming(), 'id -> "form", 'class -> "form") {
       <p>【Q1】@{required} 自分が経験してきた<code>プログラミング言語</code>を選択してください。</p>
       <select name="programingLanguages" class="form-control">
         @for(lang <- ProgramingLanguages.values){
@@ -30,7 +31,8 @@
       <textarea name="frameworkName" class="form-control" row="4" cols="100"></textarea>
       <br>
       
-      <button type="button" class="btn btn-primary btn-block">登録</button>
-    </form>
+      <button type="submit" class="btn btn-primary btn-block">登録</button>
+    }
+    
   </div><!-- /.bs-example -->
 </div>
