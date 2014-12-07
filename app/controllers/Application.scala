@@ -8,6 +8,7 @@ import scala.collection.immutable.Map
 import play.api.libs.iteratee.Enumerator
 import play.api.data._
 import play.api.data.Forms._
+import views.html.defaultpages.todo
 
 object Application extends Controller {
 
@@ -34,13 +35,11 @@ object Application extends Controller {
 
   val SESSION_KEY = "SESSION_KEY"
 
-  def index = Action {
-    //    Result(
-    //        header = ResponseHeader(200, Map(CONTENT_TYPE -> "text/plain")),
-    //        body = Enumerator("Hello world!".getBytes())
-    //        )
-    Ok(views.html.index("Your new application is ready."))
-  }
+  def index = todo
+  //    Result(
+  //        header = ResponseHeader(200, Map(CONTENT_TYPE -> "text/plain")),
+  //        body = Enumerator("Hello world!".getBytes())
+  //        )
 
   def setCookie(name: String) = Action {
     print("session save.")
