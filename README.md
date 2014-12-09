@@ -8,6 +8,7 @@ Technology Grasp tool by Scala
 ## Required
 * Sbt 0.13.5 (cannot use old version)
 * Scala 2.11
+* Slick(for Scala DB access API Lib)
 * Playframework 2.3.6 (cannot use old version)
 * eclipse
  
@@ -43,6 +44,6 @@ Please Check Sbt and Scala, Play version. If version you have the Technology is 
 # Memo
 今後、このリポジトリは更新されません。CRUD処理が出てきたので、公開で作るわけには行かなくなりました。
 
-というわけで、Bitbucketに移行
+というわけで、private repoに移行
 
 buildパスしてるので、簡単に使えるように編集はします
