@@ -47,3 +47,47 @@ Please Check Sbt and Scala, Play version. If version you have the Technology is 
 というわけで、private repoに移行
 
 buildパスしてるので、簡単に使えるように編集はします
+
+# Other
+## In case play-Java
+
+### 1. new activator
+
+```.sh
+activator new
+```
+
+### 2. select template by 1 to 6
+
+```
+Browse the list of templates: http://typesafe.com/activator/templates
+Choose from these featured templates or enter a template name:
+  1) minimal-akka-java-seed
+  2) minimal-akka-scala-seed
+  3) minimal-java
+  4) minimal-scala
+  5) play-java
+  6) play-scala
+(hit tab to see a list of all templates)
+```
+
+For example → 5
+
+### 3. name project
+
+```
+Enter a name for your application (just press enter for 'play-java')
+```
+
+For example test-play-java
+
+### 4. type cmd
+
+```.sh
+cd test-play-java
+activator
+eclipse with-source=true
+run
+```
+
+play-javaの方もこの手順で起動することができる。
