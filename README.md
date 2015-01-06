@@ -91,3 +91,13 @@ run
 ```
 
 play-javaの方もこの手順で起動することができる。
+
+### 注意点
+Libraryの依存関係をいじった場合以下の手順で最新の状態にすること
+
+```.sh
+activator
+reload
+eclipse with-source=true
+package
+```
